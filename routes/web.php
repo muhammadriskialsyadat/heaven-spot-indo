@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReportExportController;
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'Hello World - Laravel is Running!';
 });
 
 Route::get('/purchase-order/{purchaseOrder}/invoice', function (PurchaseOrder $purchaseOrder) {
