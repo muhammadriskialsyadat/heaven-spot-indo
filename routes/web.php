@@ -4,8 +4,9 @@ use App\Models\PurchaseOrder;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReportExportController;
 
+// Redirect homepage ke admin login
 Route::get('/', function () {
-    return 'Hello World - Laravel is Running!';
+    return redirect('/admin');
 });
 
 Route::get('/purchase-order/{purchaseOrder}/invoice', function (PurchaseOrder $purchaseOrder) {
